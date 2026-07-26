@@ -1,8 +1,25 @@
 aid: dataai
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dataai.png
 name: Data.ai
-description: 'Data.ai is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: analytics. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Data.ai (founded as App Annie in 2010, rebranded to data.ai in 2022) was a mobile app
+  market-data and analytics provider, offering estimates of app downloads, revenue, usage, and competitive
+  market intelligence across the iOS App Store and Google Play for publishers, brands, and investors.
+  The company historically exposed a market-data API (api.data.ai) for programmatic access to app
+  performance and store intelligence. Data.ai was acquired by Sensor Tower in 2024 and now operates as
+  a Sensor Tower company; its standalone site is a gated login and the former public API host serves a
+  default page, so its independent API surface has been consolidated into Sensor Tower and effectively
+  retired. Surfaced in the API Evangelist network as an ivp portfolio company.'
 url: https://raw.githubusercontent.com/api-evangelist/dataai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,20 @@ x-backed-by:
 - ivp
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Sensor Tower (2024)
+x-former-name: App Annie
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Analytics
+- Mobile
+- App Store
+- Market Data
+- Business Intelligence
+- App Analytics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +48,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dataai-domain-security.yml
 - type: Website
   url: https://www.data.ai
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
